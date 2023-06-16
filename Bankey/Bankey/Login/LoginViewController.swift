@@ -140,7 +140,8 @@ extension LoginViewController {
         }
         
         if username == "Alan" && password == "Hola" {
-            print("Welcome!")
+            loginView.usernameTextField.text = ""
+            loginView.passwordTextField.text = ""
             signInButton.configuration?.showsActivityIndicator = true
             delegate?.didLogin()
         } else {
