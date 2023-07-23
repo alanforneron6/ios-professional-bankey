@@ -32,6 +32,8 @@
 		1FBCD3E72A5C36C6002BD362 /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD3E62A5C36C6002BD362 /* AccountTest.swift */; };
 		1FBCD3E92A6584F7002BD362 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD3E82A6584F7002BD362 /* SkeletonLoadable.swift */; };
 		1FBCD3EB2A658765002BD362 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD3EA2A658765002BD362 /* SkeletonCell.swift */; };
+		1FBCD3EE2A6D6901002BD362 /* ProfileManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD3ED2A6D6901002BD362 /* ProfileManageable.swift */; };
+		1FBCD3F02A6D6F5B002BD362 /* AccountSummaryViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD3EF2A6D6F5B002BD362 /* AccountSummaryViewControllerTest.swift */; };
 		1FEA0D6429DF0B30006300B0 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA0D6329DF0B30006300B0 /* OnboardingContainerViewController.swift */; };
 		1FEA0D6629DF10FC006300B0 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA0D6529DF10FC006300B0 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +77,8 @@
 		1FBCD3E62A5C36C6002BD362 /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
 		1FBCD3E82A6584F7002BD362 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
 		1FBCD3EA2A658765002BD362 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
+		1FBCD3ED2A6D6901002BD362 /* ProfileManageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageable.swift; sourceTree = "<group>"; };
+		1FBCD3EF2A6D6F5B002BD362 /* AccountSummaryViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTest.swift; sourceTree = "<group>"; };
 		1FEA0D6329DF0B30006300B0 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		1FEA0D6529DF10FC006300B0 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +132,7 @@
 		1F8247902A2E39C4006CD0BA /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
+				1FBCD3EC2A6D676A002BD362 /* Netwotking */,
 				1FBCD3E02A55C164002BD362 /* AccountSummaryViewController+Networking.swift */,
 				1F8247912A2E3A10006CD0BA /* AccountSummaryViewController.swift */,
 				1F657DB52A30B1A200CA314A /* Cells */,
@@ -224,8 +229,17 @@
 			children = (
 				1FBCD3E42A5C365D002BD362 /* ProfileTest.swift */,
 				1FBCD3E62A5C36C6002BD362 /* AccountTest.swift */,
+				1FBCD3EF2A6D6F5B002BD362 /* AccountSummaryViewControllerTest.swift */,
 			);
 			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		1FBCD3EC2A6D676A002BD362 /* Netwotking */ = {
+			isa = PBXGroup;
+			children = (
+				1FBCD3ED2A6D6901002BD362 /* ProfileManageable.swift */,
+			);
+			path = Netwotking;
 			sourceTree = "<group>";
 		};
 		1FEA0D6229DF0AEB006300B0 /* Onboarding */ = {
@@ -342,6 +356,7 @@
 				1F5972CE2A3A74B800056D53 /* CurrencyFormatterTests.swift in Sources */,
 				1FBCD3E72A5C36C6002BD362 /* AccountTest.swift in Sources */,
 				1FBCD3E52A5C365D002BD362 /* ProfileTest.swift in Sources */,
+				1FBCD3F02A6D6F5B002BD362 /* AccountSummaryViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +374,7 @@
 				1F3689662A14FF4900A3DEDC /* DummyViewController.swift in Sources */,
 				1F5972BF2A38941500056D53 /* CurrencyFormatter.swift in Sources */,
 				1F91506B29D494130047BF43 /* LoginViewController.swift in Sources */,
+				1FBCD3EE2A6D6901002BD362 /* ProfileManageable.swift in Sources */,
 				1F1E51F62A3C800800DC77DB /* NSNotificationName.swift in Sources */,
 				1F5972BD2A3893FA00056D53 /* DecimalUtils.swift in Sources */,
 				1F8551EE2A4C625E00DA030F /* ShakeyBellView.swift in Sources */,
