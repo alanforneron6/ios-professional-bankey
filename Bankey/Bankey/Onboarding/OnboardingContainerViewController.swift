@@ -34,7 +34,7 @@ class OnboardingContainerViewController: UIViewController {
         
         let page1 = OnboardingViewController(heroImage: "delorean", titleText: "Esta app es mas rápida, facil de usar y tiene un hermoso nuevo look que te hará sentir como si estuvieras en en los 80")
         let page2 = OnboardingViewController(heroImage: "thumbs", titleText: "Puedes mover tu dinero alrededor del mundo muy rápidamente y de manera segura")
-        let page3 = OnboardingViewController(heroImage: "world", titleText: "Aprende mas en www.bankey.com")
+        let page3 = OnboardingViewController(heroImage: "world", titleText: "Aprendé mas en www.bankey.com")
         
         pages.append(page1)
         pages.append(page2)
@@ -51,7 +51,6 @@ class OnboardingContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .systemPurple
         setup()
         style()

@@ -34,7 +34,6 @@ class LoginViewController: UIViewController {
         return loginView.passwordTextField.text
     }
 
-    // animation
     var leadingEdgeOnScreen: CGFloat = 16
     var leadingEdgeOffScreen: CGFloat = -1000
 
@@ -101,7 +100,6 @@ extension LoginViewController {
         view.addSubview(signInButton)
         view.addSubview(errorMessageLabel)
         
-        // Title
         NSLayoutConstraint.activate([
             subtitleLabel.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 3),
             titleLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
@@ -109,7 +107,6 @@ extension LoginViewController {
         titleLeadingAnchor = titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
         titleLeadingAnchor?.isActive = true
         
-        // Subtitle
         NSLayoutConstraint.activate([
             loginView.topAnchor.constraint(equalToSystemSpacingBelow: subtitleLabel.bottomAnchor, multiplier: 3),
             subtitleLabel.trailingAnchor.constraint(equalTo: loginView.trailingAnchor)
@@ -117,21 +114,18 @@ extension LoginViewController {
         subTitleLeadingAnchor = subtitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: leadingEdgeOffScreen)
         subTitleLeadingAnchor?.isActive = true
         
-        // LoginView
         NSLayoutConstraint.activate([
             loginView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
             view.trailingAnchor.constraint(equalToSystemSpacingAfter: loginView.trailingAnchor, multiplier: 2),
             view.centerYAnchor.constraint(equalTo: loginView.centerYAnchor),
         ])
         
-        // Button
         NSLayoutConstraint.activate([
             signInButton.topAnchor.constraint(equalToSystemSpacingBelow: loginView.bottomAnchor, multiplier: 2),
             signInButton.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
             signInButton.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
         ])
         
-        // Error message
         NSLayoutConstraint.activate([
             errorMessageLabel.topAnchor.constraint(equalToSystemSpacingBelow: signInButton.bottomAnchor, multiplier: 2),
             errorMessageLabel.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
@@ -175,7 +169,6 @@ extension LoginViewController {
     }
 }
 
-// MARK: - Animations
 // MARK: - Animations
 extension LoginViewController {
     private func shakeButton() {

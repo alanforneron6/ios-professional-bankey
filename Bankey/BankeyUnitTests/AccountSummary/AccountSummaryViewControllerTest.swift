@@ -17,7 +17,6 @@ class AccountSummaryViewControllerTests: XCTestCase {
     override func setUp() {
         super.setUp()
         vc = AccountSummaryViewController()
-        // vc.loadViewIfNeeded()
         mockManager = MockProfileManager()
         vc.profileManager = mockManager
     }

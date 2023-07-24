@@ -21,7 +21,6 @@ class SkeletonCell: UITableViewCell {
         
     let chevronImageView = UIImageView()
     
-    // Gradients
     let typeLayer = CAGradientLayer()
     let nameLayer = CAGradientLayer()
     let balanceLayer = CAGradientLayer()
@@ -44,7 +43,6 @@ class SkeletonCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         typeLayer.frame = typeLabel.bounds
         typeLayer.cornerRadius = typeLabel.bounds.height/2
         

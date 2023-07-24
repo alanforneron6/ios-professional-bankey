@@ -8,24 +8,19 @@
 import UIKit
 
 class AccountSummaryViewController: UIViewController {
-    
-    // Request Models
+
     var profile: Profile?
-        
-    // View Models
     var headerViewModel = AccountSummaryHeaderView.ViewModel(welcomeMessage: "Welcome", name: "", date: Date())
     var accounts: [Account] = []
-    //components
+
     var accountCellViewModels: [AccountSummaryCell.ViewModel] = []
     var tableView = UITableView()
     var headerView = AccountSummaryHeaderView(frame: .zero)
     let refreshControl = UIRefreshControl()
     
-    // Networking
     var profileManager: ProfileManageable = ProfileManager()
     var isLoaded = false
 
-    // Error alert
     lazy var errorAlert: UIAlertController = {
         let alert =  UIAlertController(title: "", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -123,7 +118,6 @@ extension AccountSummaryViewController: UITableViewDataSource {
 
 extension AccountSummaryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
     }
 }
 
@@ -245,7 +239,7 @@ extension AccountSummaryViewController {
     func titleAndMessageForTesting(for error: NetworkError) -> (String, String) {
             return titleAndMessage(for: error)
     }
-    
+
     func forceFetchProfile() {
         fetchProfile(group: DispatchGroup(), userId: "1")
     }

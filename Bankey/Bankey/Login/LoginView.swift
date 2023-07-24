@@ -16,7 +16,6 @@ class LoginView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         style()
         layout()
     }
@@ -59,7 +58,6 @@ extension LoginView {
         stackView.addArrangedSubview(passwordTextField)
         addSubview(stackView)
         
-        // StackView
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
@@ -87,7 +85,5 @@ extension LoginView: UITextFieldDelegate {
             return false
         }
     }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-    }
+
 }

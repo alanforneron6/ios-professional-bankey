@@ -43,12 +43,10 @@ extension OnboardingViewController {
         stackView.axis = .vertical
         stackView.spacing = 20
         
-        // Image
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: heroImage)
         
-        // Label
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = UIFont.preferredFont(forTextStyle: .title3)
